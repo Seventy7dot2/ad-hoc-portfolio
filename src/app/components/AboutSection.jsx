@@ -9,12 +9,13 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>Languages: Python, C++, Java, JavaScript, TypeScript</li>
+        <li>Frontend Technologies: React.js, Vue.js, Next.js</li>
+        <li>Backend Technologies: Flask, Node.js, Express.js</li>
+        <li>Databases: SQLite, PostgreSQL, MongoDB</li>
+        <li>Cloud Servies: AWS</li>
+        <li>DevOps: Github Actions, Docker</li>
+        <li>Version Control: Git, GitHub</li>
       </ul>
     ),
   },
@@ -23,8 +24,20 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>
+          B.Tech in Metallurgical and Materials Engineering
+          <ul>
+            <li>National Institute of Technology (NIT), Rourkela</li>
+            <li>Expected Graduation: 2026</li>
+          </ul>
+        </li>
+        <li>
+          B.S in Data Science
+          <ul>
+            <li>Indian Institute of Technology (IIT), Madras</li>
+            <li>Expected Graduation: 2026</li>
+          </ul>
+        </li>
       </ul>
     ),
   },
@@ -57,12 +70,11 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            I'm a self-motivated and dedicated individual with a strong interest
+            in web development, DevOps and Machine Learning. I love to bring
+            creative ideas to life through coding and design. My journey in the
+            world of programming began during my college years, and since then,
+            I've been on a continuous learning adventure.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -79,13 +91,13 @@ const AboutSection = () => {
               {" "}
               Education{" "}
             </TabButton>
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
               Certifications{" "}
-            </TabButton>
+            </TabButton> */}
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
