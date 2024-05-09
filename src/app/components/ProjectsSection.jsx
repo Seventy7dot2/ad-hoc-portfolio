@@ -50,7 +50,7 @@ const projectsData = [
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Seventy7dot2/iitm_calculator",
-    previewUrl: "https://seventy7dot2.github.io/iitm_calculator/",
+    previewUrl: "https://calc.prasadpatra.dev/",
   },
   // {
   //   id: 6,
