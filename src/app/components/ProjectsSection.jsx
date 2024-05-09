@@ -32,7 +32,7 @@ const projectsData = [
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Seventy7dot2/Grocery_Store",
-    previewUrl: "https://www.youtube.com/watch?v=YHBXEdMetbA",
+    previewUrl: "https://ecomm.prasadpatra.dev",
   },
   {
     id: 4,
