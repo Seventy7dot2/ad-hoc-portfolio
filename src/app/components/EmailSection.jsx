@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import DiscordIcon from "../../../public/discord-icon.svg";
+import DevfolioIcon from "../../../public/devfolio-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -56,11 +58,33 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/Seventy7dot2">
+          <Link
+            target="_blank"
+            href="https://github.com/Seventy7dot2"
+            title="GitHub"
+          >
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/prasadpatra50/">
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/prasadpatra50"
+            title="LinkedIn"
+          >
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
+          <Link
+            target="_blank"
+            href="https://discordapp.com/users/seventy7.2"
+            title="Discord"
+          >
+            <Image src={DiscordIcon} alt="Discord Icon" />
+          </Link>
+          <Link
+            target="_blank"
+            href="https://devfolio.co/@Prasadpatra"
+            title="Devfolio"
+          >
+            <Image src={DevfolioIcon} alt="Devfolio Icon" />
           </Link>
         </div>
       </div>
